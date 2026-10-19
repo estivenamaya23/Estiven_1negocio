@@ -13,6 +13,8 @@
   --neutral-600: #5b6d89;
   --neutral-900: #111827;
   --white: #ffffff;
+  --page-bg: #f4f8ff;
+  --body-text: #111827;
   --shadow-soft: 0 12px 32px rgba(19, 35, 63, 0.08);
   --radius: 18px;
 }
@@ -24,8 +26,8 @@ html {
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
-  background: linear-gradient(180deg, #f4f8ff 0%, #eef4ff 100%);
-  color: var(--neutral-900);
+  background: linear-gradient(180deg, var(--page-bg) 0%, #eef4ff 100%);
+  color: var(--body-text);
 }
 
 img {
@@ -67,6 +69,103 @@ a {
   border-radius: 20px;
   background: var(--white);
   box-shadow: var(--shadow-soft);
+}
+
+body[data-theme="dark"] {
+  --neutral-100: #202d3e;
+  --neutral-200: #344256;
+  --neutral-300: #43536a;
+  --neutral-600: #b2bfd0;
+  --neutral-900: #edf2f8;
+  --white: #172334;
+  --page-bg: #101a28;
+  --body-text: #edf2f8;
+  --shadow-soft: 0 12px 32px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(180deg, #101a28 0%, #152235 100%);
+  color: var(--body-text);
+}
+
+body[data-theme="dark"] .bg-white,
+body[data-theme="dark"] .accordion-item,
+body[data-theme="dark"] .accordion-button,
+body[data-theme="dark"] .accordion-body {
+  background-color: var(--white) !important;
+  color: var(--body-text);
+}
+
+body[data-theme="dark"] .bg-primary-subtle {
+  background-color: #1c3550 !important;
+}
+
+body[data-theme="dark"] .text-secondary,
+body[data-theme="dark"] .text-dark {
+  color: #b8c5d6 !important;
+}
+
+body[data-theme="dark"] .text-primary {
+  color: #78adff !important;
+}
+
+body[data-theme="dark"] .border,
+body[data-theme="dark"] .border-primary-subtle,
+body[data-theme="dark"] .border-warning-subtle,
+body[data-theme="dark"] .border-success-subtle {
+  border-color: #3a4b61 !important;
+}
+
+body[data-theme="dark"] .form-select,
+body[data-theme="dark"] .form-control {
+  background-color: #202d3e;
+  border-color: #43536a;
+  color: var(--body-text);
+}
+
+body[data-theme="dark"] .table {
+  --bs-table-color: var(--body-text);
+  --bs-table-bg: var(--white);
+  --bs-table-hover-color: var(--body-text);
+  --bs-table-hover-bg: #223247;
+  border-color: #3a4b61;
+}
+
+body[data-theme="dark"] .table thead th {
+  background: #202d3e;
+  color: #dce8f7;
+}
+
+body[data-theme="dark"] .quiz-shell,
+body[data-theme="dark"] .feature-card,
+body[data-theme="dark"] .etl-card,
+body[data-theme="dark"] .case-card,
+body[data-theme="dark"] .panel-card,
+body[data-theme="dark"] .stat-card,
+body[data-theme="dark"] .card {
+  border-color: #2e3d51;
+}
+
+body[data-theme="dark"] .panel-header h2,
+body[data-theme="dark"] .stat-card strong,
+body[data-theme="dark"] .step {
+  color: #e5edf7;
+}
+
+body[data-theme="dark"] .step,
+body[data-theme="dark"] .answer-option {
+  background: #202d3e;
+  border-color: #3a4b61;
+}
+
+body[data-theme="dark"] .quiz-score {
+  background: #263d5c;
+  color: #e5edf7;
+}
+
+body[data-theme="dark"] .accordion-button::after {
+  filter: invert(1);
+}
+
+body[data-theme="dark"] .navbar .btn-outline-light:hover {
+  color: #101a28;
 }
 
 @media (max-width: 576px) {
