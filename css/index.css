@@ -1,0 +1,224 @@
+.hero-section {
+  background: linear-gradient(135deg, var(--primary-900) 0%, var(--primary-700) 50%, var(--primary-500) 100%);
+  color: var(--white);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.hero-content h1 {
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.hero-badges span {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  padding: 0.5rem 0.9rem;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-panel {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 1.5rem;
+}
+
+.hero-panel .info-box {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 1rem 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.hero-panel .info-box:last-child {
+  margin-bottom: 0;
+}
+
+.section-label {
+  color: var(--primary-600);
+  font-size: 0.76rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.feature-card, .case-card, .etl-card {
+  padding: 1.4rem;
+  height: 100%;
+}
+
+.icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(44, 126, 247, 0.18), rgba(30, 203, 138, 0.18));
+  display: grid;
+  place-items: center;
+  color: var(--primary-700);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.step-flow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.2rem;
+}
+
+.step {
+  background: rgba(44, 126, 247, 0.08);
+  border: 1px solid rgba(44, 126, 247, 0.12);
+  border-radius: 12px;
+  padding: 0.8rem 1rem;
+  font-weight: 600;
+  color: var(--primary-800);
+}
+
+.arrow {
+  font-size: 1.5rem;
+  color: var(--primary-600);
+}
+
+.accordion-button:not(.collapsed) {
+  background: rgba(44, 126, 247, 0.08);
+  color: var(--primary-800);
+}
+
+.quiz-shell {
+  padding: 1.5rem;
+}
+
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: end;
+  margin-bottom: 1.3rem;
+}
+
+.progress {
+  height: 12px;
+  background: var(--neutral-200);
+}
+
+.progress-bar {
+  background: linear-gradient(90deg, var(--primary-500), var(--accent));
+}
+
+.answer-list {
+  display: grid;
+  gap: 0.8rem;
+  list-style: none;
+  padding-left: 0;
+  margin: 1.1rem 0 0;
+}
+
+.answer-option {
+  width: 100%;
+  border: 1px solid rgba(17, 24, 39, 0.08);
+  background: var(--neutral-100);
+  border-radius: 12px;
+  padding: 0.95rem 1rem;
+  text-align: left;
+  transition: all 0.2s ease;
+}
+
+.answer-option:hover,
+.answer-option:focus-visible {
+  border-color: rgba(44, 126, 247, 0.6);
+  background: rgba(44, 126, 247, 0.04);
+  outline: none;
+}
+
+.answer-option.selected {
+  border-color: var(--primary-600);
+  background: rgba(44, 126, 247, 0.08);
+}
+
+.answer-option.correct {
+  border-color: rgba(30, 203, 138, 0.8);
+  background: rgba(30, 203, 138, 0.08);
+}
+
+.answer-option.incorrect {
+  border-color: rgba(239, 71, 111, 0.8);
+  background: rgba(239, 71, 111, 0.08);
+}
+
+.quiz-feedback {
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+  margin-top: 1rem;
+  background: rgba(44, 126, 247, 0.06);
+  border: 1px solid rgba(44, 126, 247, 0.12);
+}
+
+.quiz-feedback.success {
+  background: rgba(30, 203, 138, 0.08);
+  border-color: rgba(30, 203, 138, 0.22);
+}
+
+.quiz-feedback.error {
+  background: rgba(239, 71, 111, 0.06);
+  border-color: rgba(239, 71, 111, 0.22);
+}
+
+.quiz-score {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  background: rgba(23, 104, 217, 0.08);
+  color: var(--primary-800);
+  padding: 0.45rem 0.8rem;
+  font-weight: 700;
+}
+
+.quiz-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.quiz-result {
+  margin-top: 1.25rem;
+  background: linear-gradient(135deg, var(--primary-900), var(--primary-700));
+  color: white;
+  border-radius: 18px;
+  padding: 1.4rem;
+}
+
+.badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.medal {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .quiz-header,
+  .quiz-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

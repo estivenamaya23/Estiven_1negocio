@@ -1,0 +1,71 @@
+.dashboard-page {
+  min-height: calc(100vh - 160px);
+}
+
+.stat-card,
+.panel-card {
+  background: var(--white);
+  border-radius: 18px;
+  border: 1px solid rgba(17, 24, 39, 0.05);
+  box-shadow: var(--shadow-soft);
+}
+
+.stat-card {
+  padding: 1.2rem 1.1rem;
+}
+
+.stat-card .label {
+  display: block;
+  color: var(--neutral-600);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.55rem;
+}
+
+.stat-card strong {
+  font-size: clamp(1.4rem, 2.2vw, 2rem);
+  color: var(--primary-800);
+}
+
+.panel-card {
+  padding: 1.2rem 1rem 0.8rem;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.panel-header h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary-800);
+}
+
+canvas {
+  max-height: 330px;
+}
+
+.table thead th {
+  background: var(--neutral-100);
+  color: var(--primary-800);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.table tbody td {
+  font-size: 0.92rem;
+}
+
+@media (max-width: 576px) {
+  .panel-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
